@@ -1,5 +1,7 @@
 
-list.of.packages <- c("dplyr", "readxl", "ggplot2", "ggrepel")
+volcano_HH <- function(in_test = x1, color_range = c(x2,x3,x4), mycolors = c(x5,x6,x7), variable_label = x8, in_width = x9, in_height = x10){
+  
+  list.of.packages <- c("dplyr", "readxl", "ggplot2", "ggrepel")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 
@@ -9,9 +11,6 @@ library(dplyr)
 library(readxl)
 library(ggplot2)
 library(ggrepel)
-
-
-volcano_HH <- function(in_test = x1, color_range = c(x2,x3,x4), mycolors = c(x5,x6,x7), variable_label = x8, in_width = x9, in_height = x10){
 
   ##################################[ Code ]##################################
 
